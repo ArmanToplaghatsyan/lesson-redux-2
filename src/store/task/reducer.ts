@@ -17,8 +17,11 @@ export const taskReduser = (state = data, action: any) => {
     //   }
     //   break
 
-    case 'changedone':
-      
+    case 'changeDone':
+      const task = state.tasks.find((elm) => elm.id == action.payload);
+      if(task){
+        task.done = !task.done
+      }
       break;
   }
   return state;

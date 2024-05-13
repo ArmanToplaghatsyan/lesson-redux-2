@@ -1,0 +1,30 @@
+.menu{
+    background-color: rgb(207, 231, 231);
+    width: 95%;
+    min-height: 50px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(81, 94, 78);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 2px rgb(178, 202, 196);
+    ul{
+        display: flex;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        list-style: none;
+        font-size: 25px;
+        column-gap: 40px;
+        width: 300px;
+
+       a{
+
+           color: rgb(68, 82, 77);
+           text-decoration: none;
+           transition: 0.5s;
+           &:hover{
+                color:rgb(159, 109, 168)
+           }
+       }
+    }
+}

@@ -8,3 +8,9 @@ export const deleteTaskById = (payload: number) => {
     return({type: 'deleteTaskById', payload})
 }
 
+export const changeDone = (payload: number) => {
+    return({type: 'changeDone', payload})
+    
+    
+}
+
